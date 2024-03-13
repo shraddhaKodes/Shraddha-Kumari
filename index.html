@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js"></script>
+    <style>
+        
+        .recent-posts-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .recent-post-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+    <script src="js/scripts.js"></script>
+    <header>
+        <div class="nav-address">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="span"></div>
+                
+                <div class="b1 border "><a href=""class="box-contain">Home</a></div>
+                <div class="b2 border "><a href="" class="box-contain">About</a></div>
+                <div class="b3 border "><a href="" class="box-contain">Service</a></div>
+                <div class="b4 border ">
+                    <i class="fa-solid fa-id-card" id="abc"></i>
+                    <label for="dash"></label>
+                    <div id="dropdown">
+                    <select name="dash" id="dash" placceholder="option">
+                        <option value="dashboard"><a href="">Dashboard</a></option>
+                        <option value="logout"><a href="">Logout</a></option>
+                    </select>
+                    </div>
+                  
+                </div>
+        </div>
+
+    </header>
+    <!-- <div class="page-wrapper">
+        <div class="post-slider">
+        <h1 class="slider-title">Trending Post</h1>
+        <div class="amazon-carousel">
+            <div class="amazon-carousel-inner">
+                
+            </div>
+            <div class="slick-controls">
+                <button class="slick-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slick-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="post-wrapper">
+            <div class="post"><p>post1</p></div>
+            <div class="post"><p>post2</p></div>
+            <div class="post"><p>post3</p></div>
+            <div class="post"><p>post4</p></div>
+            <div class="post"><p>post5</p></div>
+        </div>
+        </div> -->
+        <div class="body">
+            <div class="bodyimg"></div>
+            <div class="para3">
+                <p>DevBlog website, inspired by the detective character of Sherlock Holmes, is a platform that showcases trending and recent posts <a href="">Click here to know about block</a></p>
+            </div>
+        </div>
+
+        <!--content....................-->
+
+        <div class="content">
+            <div class="secondary-container">
+                <div class="main-content">
+                    <h1 class="recent-post-title">Recent Post</h1>
+                    <div class="post-title"></div>
+               </div>
+                <div class="recent-posts-container">
+                    <div class="recent-post-item">
+                        <img src="img1.webp" alt="" class="src">
+                        <br/>
+                        <h3><a href="#">Sherlock Lifestyle And The Technology Behind The Man</a></h3>
+                        <p>Published on: <span class="post-date">March 10, 2024</span></p>
+                        <p>Throughout the Sherlock BBC series, there are countless occasions where Sherlock used  technology to aide in his investigations. 
+                         To truly appreciate the Sherlock experience, one must examine the technology that aides in his methodology.    
+                         We will look at all the gadgets that help Sherlock solvecases and how these objects can be used to better your own life. </p>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="img2.webp" alt="" class="src">
+                        <br/>
+                        <h3><a href="#">Sherlock's Lifestyle Way To Detect A Liar</a></h3>
+                        <p>Published on: <span class="post-date">March 8, 2024</span></p>
+                        <p> Society is an interesting creature of masks. Each person applies multiple mask for each occasion. One mask for society, a mask for family and friends, and a reveal only for one’s self. This reveal is when the person looks into a mirror and slowly peels off each mask to display a creature cleansed and vulnerable. Fortunately, each mask a person wears has a strong correlation to every person in the world. This is possible through the art of micro expression.</p>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="img3.webp" alt="" class="src">
+                        <br/>
+                        <h3><a href="#">Sherlock's Lifestyle Top 4 Deadiest poison</a></h3>
+                        <p>Published on: <span class="post-date">March 5, 2024</span></p>
+                        <p>Sherlock encounters many murders and the most confusing murders are the ones that involve poisons. Here are four of the most deadliest poisons in history and many have been used to commit murders. 
+                           <br/>1. Ricin <br/>
+                             Ricin is a toxic protein, found in caster bean plants. This poison attacks individual cells in your body and inhibits protein creation. The toxic spreads and affects the whole body, one cell at a time. </p>
+                         <br/>2. Batrachotoxin<br/>
+                             Batrachotoxin is interesting, because most of us have heard of it. It is found on a particular frog, called the golden poison frog, native to western Columbia.       
+                             The frog produces this toxin during a fight or flight stage. It will begin to excrete a milky substance, and uses it as a defense mechanism. It is extremely deadly because it blocks all nerve signals, permanently. This stops muscles from contracting, causing heart failure and paralysis. There is no known antidote for the neurotoxin. 
+
+                    </div>
+                <!-- Add more recent post items here -->
+               </div>
+           </div>     
+           <div class="others">
+            <div class="nav-search border">
+                <input type="text" placeholder="Search" class="search-input">
+                <div class="search-icon">
+                <i class="fa-brands fa-searchengin"></i>
+                </div>
+            </div>
+                <div class="topics">
+                    <h3>TOPICS</h3>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>About Sherlock Holmes</summary>
+                                Sherlock Holmes is a fictional detective created by British author Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.
+                                The character Sherlock Holmes first appeared in print in 1887's A Study in Scarlet. His popularity became widespread with the first series of short stories in The Strand Magazine, beginning with "A Scandal in Bohemia" in 1891; additional tales appeared from then until 1927, eventually totalling four novels and 56 short stories. All but one[a] are set in the Victorian or Edwardian eras, between about 1880 and 1914. Most are narrated by the character of Holmes's friend and biographer Dr. John H. Watson, who usually accompanies Holmes during his investigations and often shares quarters with him at the address of 221B Baker Street, London, where many of the stories begin.
+
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Inspiration for the character</summary>
+                                Edgar Allan Poe's C. Auguste Dupin is generally acknowledged as the first detective in fiction and served as the prototype for many later characters, including Holmes.[8] Conan Doyle once wrote, "Each [of Poe's detective stories] is a root from which a whole literature has developed ... Where was the detective story until Poe breathed the breath of life into it?"[9] Similarly, the stories of Émile Gaboriau's Monsieur Lecoq were extremely popular at the time Conan Doyle began writing Holmes, and Holmes's speech and behaviour sometimes follow those of Lecoq.
+
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>The Great Hiatus</summary>
+                                The first set of Holmes stories was published between 1887 and 1893. Conan Doyle killed off Holmes in a final battle with the criminal mastermind Professor James Moriarty[44] in "The Final Problem" (published 1893, but set in 1891), as Conan Doyle felt that "my literary energies should not be directed too much into one channel."[45] However, the reaction of the public surprised Doyle very much. Distressed readers wrote anguished letters to The Strand Magazine, which suffered a terrible blow when 20,000 people cancelled their subscriptions to the magazine in protest.[46] Conan Doyle himself received many protest letters, and one lady even began her letter with "You brute".[46] Legend has it that Londoners were so distraught upon hearing the news of Holmes's death that they wore black armbands in mourning, though there is no known contemporary source for this; the earliest known reference to such events comes from 1949.[47] However, the recorded public reaction to Holmes's death was unlike anything previously seen for fictional events.
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Retirement</summary>
+                                In His Last Bow, the reader is told that Holmes has retired to a small farm on the Sussex Downs and taken up beekeeping as his primary occupation.[51] The move is not dated precisely, but can be presumed to be no later than 1904 (since it is referred to retrospectively in "The Adventure of the Second Stain", first published that year).[52] The story features Holmes and Watson coming out of retirement to aid the British war effort. Only one other adventure, "The Adventure of the Lion's Mane", takes place during the detective's retiremen
+                            </details>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="box1">
+            <h2 class="foot top">THE AWESOME WEBSITE</h2>
+            <h2 class="foot">DEVBLOG</h2>
+            <h3 class="foot lg1">DO YOU HAVE ANY DOUBTS</h3>
+            <h3 class="foot lg1">Contact Us At:</h3>
+            <h4 class="foot">contact <a href="mail to:abc@gmail.com">@devblog.com</a></h4>
+            <div class="footp">
+                <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+                <a href="mailto:your@email.com" class="social-icons"><i class="fa fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+
+       <div class="box2">
+        <div class="neon-container">
+            <div class="dot m"></div>
+            <div class="dot n"></div>
+            <div class="dot o"></div>
+            <div class="dot p"></div>
+            <div class="dot q"></div>
+
+        </div>
+       </div>
+
+       </div>
+    
+    
+</body>
+</html>

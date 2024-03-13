@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav-address {
+    height: 60px;
+    background-color: #686b6b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-logo {
+    width: 70px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('sherlock2.webp');
+    background-size: cover;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #686b6b;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.page-wrapper{
+    height:400px;
+    background-color: papayawhip;
+   
+}
+
+.post-slider{
+    position: relative;
+    border:1px solid red;
+}
+.post-slider .slider-title{
+    text-align:center;
+    margin:15px auto;
+}
+.post-slider .next{
+    position:absolute;
+    top:50%;
+    right: 30px;
+    font-size:2em;
+    cursor:pointer;
+    color:#006669;
+
+}
+.post-slider .prev{
+    position:absolute;
+    top:50%;
+    right: 30px;
+    font-size:2em;
+    cursor:pointer;
+    color:#006669;
+
+}
+.post-slider .post-wrapper{
+    width:59%;
+    height:250px;
+    margin:0px auto;
+    overflow:hidden;
+    border:1px dashed red;
+    display:-webkit-inline-box;
+    position:relative;
+    bottom:20px;
+    left:210px;
+}
+
+.post-slider .post-wrapper .post{
+    width:294px;
+    height:307px;
+    margin:0px 10 px;
+    margin:1px;
+    position:relative;
+    bottom:25%;
+    color:#333;
+    display: -webkit-inline-box;
+
+}
+/* Add styles for the Amazon carousel */
+.amazon-carousel {
+    width: 80%;
+    margin: 50px auto;
+    position: relative; /* Position the carousel container */
+}
+
+.amazon-carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.amazon-carousel-inner div {
+    font-size: 50px; /* Adjust the size of the icons as needed */
+    color: #333; /* Change the color of the icons */
+    padding: 20px; /* Add some padding around the icons */
+}
+
+/* Style for the previous and next buttons */
+.slick-controls {
+    position: absolute; /* Position the controls within the carousel container */
+    top: 50%; /* Align the controls vertically */
+    transform: translateY(-50%); /* Center the controls vertically */
+    width: 100%; /* Make controls take full width of the carousel */
+    display: flex;
+    justify-content: space-between; /* Position previous and next buttons at the ends */
+    z-index: 1; /* Ensure controls are above carousel content */
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+    color: #333; /* Change the color of the icons */
+    background: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor */
+}
+/* body*/
+.body{
+    height:350px;
+    width:1500px;
+    display:flex;
+    flex-direction:row;
+
+}
+.bodyimg{
+    height:350px;
+    width:500px;
+    background-image : url(holmsit2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.para3{
+    height:250px;
+    width:40%;
+    background-color: rgb(149, 195, 195);
+    font-size: 1.5rem;
+    color:black;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    margin-top:5%;
+    border-bottom:2px solid rgb(149, 13, 56);
+    box-shadow: 0 3px 6px rgba(114, 40, 40, 0.16), 0 3px 6px rgba(121, 33, 33, 0.23);
+    border-radius:5%;
+
+
+
+}
+.para3 a{
+    color:#378dea;
+}
+
+
+
+/*content.........................................*/
+.content{
+    width:90%;
+    height:auto;
+    margin: 20px;
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+    border-left:1px solid red;
+    border-right:1px solid red;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: grey;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-self:center;
+    
+}
+.secondary-container{
+    width:70%;
+    float:left;
+    display:block;
+    background-color: antiquewhite;
+
+}
+.main-content{
+    display:inline-block;
+    width:100%;
+}
+.main-content .recent-post-title{
+    width:100%;
+    float:left;
+    border-bottom:2px solid rgb(149, 13, 56);
+    box-shadow: 0 3px 6px rgba(114, 40, 40, 0.16), 0 3px 6px rgba(121, 33, 33, 0.23);
+    color:rgb(87, 6, 6);
+    font-style: italic;
+}
+.main-content .post-title{
+    height:4.9%;
+    width:30%;
+    float:left;
+    border-bottom:2px solid rgb(13, 149, 33);
+    box-shadow: 0 3px 6px rgba(40, 114, 75, 0.16), 0 3px 6px rgba(33, 121, 74, 0.23);
+}    
+ 
+.content-sidebar{
+    width:30%;
+    float:left;
+    border:1px dashed rgb(27, 246, 27);
+    height:300px;
+}
+
+.recent-posts-container .recent-post-item{
+    height:30%;
+    width:60%;
+    float:left;
+}
+a{
+    color:#333;
+    font-size:medium;
+}
+
+h3{
+    color:black;
+    font-size:2px;
+    height:5%;
+    width:100%;
+}
+.others{
+    height:90%;
+    width:30%;
+    background-color: rgb(129, 76, 13);
+
+}
+.nav-search{
+    height: 56px;
+    width: 100%;
+    display:flex;
+    border-radius: 4px;
+    background-color:grey;
+    margin-top:15%;
+}
+.search-input{
+    height:40px;
+    width:346.51px;
+   
+
+}
+.nav-search:hover{
+    border:3px solid orange;
+}
+
+.search-icon{
+    height:40px;
+    width:45px;
+    color:antiquewhite;
+    background-color: rgba(17, 223, 158, 0.871);
+
+}
+.search-icon:hover{
+    background-color:orange;
+}
+/*others.......*/
+.topics{
+    height: 70%;
+    width: 100%;
+    background-color:grey;
+}
+ul{
+    margin-left:10%;
+    font-size:1em;
+    background-color: bisque;
+}
+summary{
+    font-size:1.5em;
+}
+/*footer*/
+.footer{
+    width:90%;
+    height:300px;
+    background-color:rgb(86, 83, 83);
+    color:aliceblue;
+    margin-left:5px;
+}
+.box1{
+    width:100%;
+    height:200px;
+    border-bottom:1px solid white;
+}
+.foot{
+    
+    text-align: center;
+    margin: 10px;
+}
+
+   
+
+.lg1{
+    font-size: medium;
+}
+.footp{
+    height:60px;
+    width:150px;
+    position: absolute;
+    bottom:0px;
+   
+}
+.social-icons {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+}
+.box2{
+    width:100%;
+    height:100px;
+}
+.box2 .neon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3%;
+}
+
+.dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: neonGlow 1s alternate infinite;
+        }
+
+        .dot::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: neonGlow 1s alternate infinite;
+        }
+
+        @keyframes neonGlow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 10px #00ffcc;
+            }
+            100% {
+                transform: scale(1.2);
+                box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+            }
+        }
+
+        .m{
+            background-color: #ff6f00;
+        }
+        .n{
+            background-color: #ccff00;
+        }
+        .o{
+            background-color: #0011ff;
+        }
+        .p{
+            background-color: #d4ff00;
+        }
+        .q{
+            background-color: #ff7700;
+        }
+
+
+
+/*media query...................................*/
+@media screen and (max-width: 768px) {
+    .nav-address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .b1,
+    .b2,
+    .b3,
+    .b4 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .dropdown {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
